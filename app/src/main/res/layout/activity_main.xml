@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#97B197"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/headerId"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:text="Konsta - Online(Official music)"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:text="Download"
+            android:textColor="#000" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imageLayId"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/headerId">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/music1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageLayId"
+        android:layout_margin="25dp">
+
+        <SeekBar
+            android:id="@+id/seekbarId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekbarId"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:text="00:00" />
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekbarId"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingEnd="12dp"
+            android:paddingRight="16dp"
+            android:text="00:00" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/time2"
+            android:layout_marginTop="20dp"
+            android:gravity="center|top">
+
+            <Button
+                android:id="@+id/btnLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Prew" />
+
+            <Button
+                android:id="@+id/btnCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Play" />
+
+            <Button
+                android:id="@+id/btnRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Next" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
